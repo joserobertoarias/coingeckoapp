@@ -1,0 +1,79 @@
+
+  
+
+<div *ngIf="coin!">
+    <div class="card" style="max-width: 80%;">
+        <div class="card-body">
+          <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{coin.image.large}}" class="card-img-top" alt="...">
+            </div>
+            <div class="col-md-8">
+                <p class="card-text" style="padding: 10px;">{{coin.description.en}}</p>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-6">
+                <h5 class="card-title">{{coin.name}}</h5>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+                <h6 class="card-subtitle">{{coin.id}}</h6>
+            </div>
+          </div>
+
+          <div>
+            <div><h2>${{coin.market_data.current_price.usd}} USD</h2></div>
+            <div class="control-label">{{coin.coingecko_rank}} / {{coin.coingecko_score}}</div>                    
+          </div>
+        </div>
+        <div>
+            <span style="margin-left: 15px;">Links</span><br>
+            <div>
+                <ul *ngFor="let link of coin.links.homepage" class="list-group list-group-flush">
+                    <li class="list-group-item" *ngIf="link"><a href="{{link}}">{{link}}</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul *ngFor="let link of coin.links.blockchain_site" class="list-group list-group-flush">
+                    <li class="list-group-item" *ngIf="link"><a href="{{link}}">{{link}}</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul *ngFor="let link of coin.links.official_forum_url" class="list-group list-group-flush">
+                    <li class="list-group-item" *ngIf="link"><a href="{{link}}">{{link}}</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul *ngFor="let link of coin.links.chat_url" class="list-group list-group-flush">
+                    <li class="list-group-item" *ngIf="link"><a href="{{link}}">{{link}}</a></li>
+                </ul>
+            </div>   
+            <div>
+                <ul *ngFor="let link of coin.links.repos_url.github" class="list-group list-group-flush">
+                    <li class="list-group-item" *ngIf="link"><a href="{{link}}">{{link}}</a></li>
+                </ul>
+            </div>  
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <a [routerLink]="['/coins']" class="btn btn-primary">Go to List Coins</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="control-label">Platforms</label>
+                    <ul *ngFor="let platform of platforms">
+                        <li>{{platform}}</li>
+                    </ul>         
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+
+  
+
+
+</div>
