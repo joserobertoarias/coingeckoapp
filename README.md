@@ -13,6 +13,14 @@ Please see a [Demo](https://github.com/joserobertoarias/coingeckoapp)
 
 ## ScreenShots
 
+![Main Page](https://github.com/joserobertoarias/coingeckoapp/blob/6ab394e0044a01870838a39a53770eac60a72b32/src/assets/Screenshot_58.jpg)
+
+![List Page](https://github.com/joserobertoarias/coingeckoapp/blob/6ab394e0044a01870838a39a53770eac60a72b32/src/assets/Screenshot_1.jpg)
+
+![Detail Page](https://github.com/joserobertoarias/coingeckoapp/blob/6ab394e0044a01870838a39a53770eac60a72b32/src/assets/Screenshot_2.jpg)
+
+
+
 
 
 
