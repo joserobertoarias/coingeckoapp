@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Preview
 
-Please see a [Demo](https://github.com/joserobertoarias/coingeckoapp)
+Please see a [Demo](https://joserobertoarias.github.io/coingeckoapp/)
 
 ## ScreenShots
 
